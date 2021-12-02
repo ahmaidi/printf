@@ -6,7 +6,7 @@
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:46:43 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/02 21:41:16 by ahmaidi          ###   ########.fr       */
+/*   Updated: 2021/12/02 22:35:38 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ static int	put_print(va_list args, char chr)
 		length += ft_putnbr(va_arg(args, int ));
 	else if (chr == 'u')
 		length += ft_putunbr(va_arg(args, unsigned int));
+	else if (chr == 'x' || chr == 'X')
+		length += ft_hexa(va_arg(args, unsigned int), chr);
 	return (length);
 }
 
