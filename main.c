@@ -2,6 +2,10 @@
 
 int main()
 {
-	printf("%p", &('c'));
+	long i;
+	unsigned int num;
+	i = -12364;
+	num = i;
+	printf("%u", num);
 	return (0);
 }

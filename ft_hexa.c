@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_hexa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 20:45:25 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/02 21:39:44 by ahmaidi          ###   ########.fr       */
+/*   Created: 2021/12/02 21:46:53 by ahmaidi           #+#    #+#             */
+/*   Updated: 2021/12/02 22:21:05 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include <stdarg.h>
-# include <unistd.h>
+#include "ft_printf.h"
 
-int	ft_printf(const char *format,	...);
-int	ft_putchar(char c);
-int	ft_putstr(char *s);
-int	ft_putnbr(int n);
-int	ft_putunbr(long i);
-
-#endif
+int	ft_hexa(unsigned int i, char base)
+{
+		
+}
