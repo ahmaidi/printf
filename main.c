@@ -1,11 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/05 00:42:17 by ahmaidi           #+#    #+#             */
+/*   Updated: 2021/12/05 00:46:24 by ahmaidi          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include"ft_printf.h"
 #include<stdio.h>
+#include<limits.h>
 
 int main()
 {
-	long i;
-	unsigned int num;
-	i = -12364;
-	num = i;
-	printf("%u", num);
-	return (0);
+	int a = printf("%d\n",-1);
+	int b = ft_printf("%d\n", -1);
+	ft_printf("%d %d", a, b);
 }

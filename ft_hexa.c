@@ -6,7 +6,7 @@
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 21:46:53 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/02 22:36:17 by ahmaidi          ###   ########.fr       */
+/*   Updated: 2021/12/05 00:40:47 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int	ft_hexa(unsigned int i, char base)
 {
-	
+	if (i >= 16)
+	{
+		ft_hexa(i, base);
+	}
 }

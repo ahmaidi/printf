@@ -6,7 +6,7 @@
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 21:21:45 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/02 21:40:50 by ahmaidi          ###   ########.fr       */
+/*   Updated: 2021/12/04 18:44:30 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	size_of_n(long n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 1;
 	if (n < 0)
@@ -29,10 +29,10 @@ static size_t	size_of_n(long n)
 	return (i);
 }
 
-int	ft_putunbr(long i)
+int	ft_putunbr(unsigned int i)
 {
 	unsigned int	num;
-	int				len;
+	unsigned int	len;
 	int				count;
 
 	count = 0;

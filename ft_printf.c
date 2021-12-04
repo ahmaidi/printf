@@ -6,7 +6,7 @@
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:46:43 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/02 22:35:38 by ahmaidi          ###   ########.fr       */
+/*   Updated: 2021/12/05 00:48:57 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ static int	put_print(va_list args, char chr)
 		length += ft_putnbr(va_arg(args, int ));
 	else if (chr == 'u')
 		length += ft_putunbr(va_arg(args, unsigned int));
-	else if (chr == 'x' || chr == 'X')
-		length += ft_hexa(va_arg(args, unsigned int), chr);
+	// else if (chr == 'x' || chr == 'X')
+	// 	length += ft_hexa(va_arg(args, unsigned int), chr);
 	return (length);
 }
 
@@ -62,10 +62,10 @@ int	ft_printf(const char *format,	...)
 	return (len);
 }
 
-int main()
-{
-	int a;
-	a = ft_printf("%u\n", -12364);
-	ft_printf("%d\n",a);
-	return (0);
-}
+// int main()
+// {
+// 	int a;
+// 	a = ft_printf("%u\n", -12364);
+// 	ft_printf("%d\n",a);
+// 	return (0);
+// }
