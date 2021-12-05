@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
+/*   By: otman <otman@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 00:42:17 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/05 00:46:24 by ahmaidi          ###   ########.fr       */
+/*   Updated: 2021/12/05 18:28:52 by otman            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"ft_printf.h"
 #include<stdio.h>
-#include<limits.h>
-
 int main()
 {
-	int a = printf("%d\n",-1);
-	int b = ft_printf("%d\n", -1);
-	ft_printf("%d %d", a, b);
+	int a;
+	a = ft_printf("%x\n", 11298);
+	ft_printf("%d\n",a);
+	return (0);
 }

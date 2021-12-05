@@ -17,10 +17,6 @@ static size_t	size_of_n(long n)
 	unsigned int	i;
 
 	i = 1;
-	if (n < 0)
-	{
-		n = n * (-1);
-	}
 	while (n / 10)
 	{
 		n = n / 10;
@@ -31,20 +27,16 @@ static size_t	size_of_n(long n)
 
 int	ft_putunbr(unsigned int i)
 {
-	unsigned int	num;
 	unsigned int	len;
 	int				count;
 
 	count = 0;
 	len = size_of_n(i);
-	if (i < 0)
-		num = i * (-1);
-	else
-		num = i;
+	
 	while (len != 0)
 	{
-		count += ft_putchar((num / len) + '0');
-		num = num % len;
+		count += ft_putchar((i/ len) + '0');
+		i = i % len;
 		len /= 10;
 	}
 	return (count);
