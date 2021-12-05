@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: otman <otman@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:45:25 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/05 19:09:01 by otman            ###   ########.fr       */
+/*   Updated: 2021/12/05 23:43:11 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ int	ft_putstr(char *s);
 int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int i);
 int	ft_hexa(unsigned int n, char base);
+int	ft_addr(unsigned long n);
 
 #endif

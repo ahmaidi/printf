@@ -1,32 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hexa.c                                          :+:      :+:    :+:   */
+/*   ft_addr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/02 21:46:53 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/06 00:40:49 by ahmaidi          ###   ########.fr       */
+/*   Created: 2021/12/05 21:21:21 by ahmaidi           #+#    #+#             */
+/*   Updated: 2021/12/05 22:03:44 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_hexa(unsigned int n, char base)
+static int	ft_hexa_p(unsigned long n)
 {
+	static int	count;
+
 	if (n >= 16)
 	{
-		ft_hexa(n / 16, base);
-		ft_hexa(n % 16, base);
+		ft_hexa_p(n / 16);
+		ft_hexa_p(n % 16);
 	}
 	else
 	{
 		if (n < 10)
-			ft_putchar(n + 48);
-		else if (n >= 10 && base == 'x')
-			ft_putchar(n + 87);
-		else if (n >= 10 && base == 'X')
-			ft_putchar(n + 55);
+		count += ft_putchar(n + 48);
+		else
+		count += ft_putchar(n + 87);
 	}
-	return (0);
+	return (count);
+}
+
+int	ft_addr(unsigned long n)
+{
+	int	count;
+
+	count = 0;
+	count += ft_putchar('0');
+	count += ft_putchar('x');
+	count += ft_hexa_p(n);
+	return (count);
 }

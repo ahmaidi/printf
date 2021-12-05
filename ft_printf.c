@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: otman <otman@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:46:43 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/05 19:08:52 by otman            ###   ########.fr       */
+/*   Updated: 2021/12/05 23:43:01 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ static int	put_print(va_list args, char chr)
 	else if (chr == 'u')
 		length += ft_putunbr(va_arg(args, unsigned int));
 	else if (chr == 'x' || chr == 'X')
-		length += ft_hexa(va_arg(args, unsigned int), chr);	
+		length += ft_hexa(va_arg(args, unsigned int), chr);
+	else if (chr == 'p')
+		length += ft_addr(va_arg(args, unsigned long));
 	return (length);
 }
 

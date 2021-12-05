@@ -1,0 +1,19 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ahmaidi/Desktop/ft_printf'
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+gcc -Wall -Wextra -Werror -c ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunbr.c ft_hexa.c ft_addr.c
+echo "files objects created "
+ar rcs libftprintf.a ft_printf.o ft_putchar.o ft_putstr.o ft_putnbr.o ft_putunbr.o ft_hexa.o ft_addr.o
+make: Leaving directory `/Users/ahmaidi/Desktop/ft_printf'
+ 
