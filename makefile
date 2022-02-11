@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/05 18:25:26 by otman             #+#    #+#              #
-#    Updated: 2021/12/05 22:34:00 by ahmaidi          ###   ########.fr        #
+#    Updated: 2021/12/06 19:04:01 by ahmaidi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,13 +21,14 @@ all: $(NAME)
 
 $(OBJS): $(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
-	@echo "files objects created "
+	@echo " files objects created "
 
 $(NAME): $(OBJS)
 	$(AR) $@ $^
+	@echo " archive created "
 clean:
 	$(RM) $(OBJS)
-
+	@echo " files objects deleted"
 fclean: clean
 	$(RM) $(NAME)
 

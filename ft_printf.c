@@ -6,12 +6,11 @@
 /*   By: ahmaidi <ahmaidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 20:46:43 by ahmaidi           #+#    #+#             */
-/*   Updated: 2021/12/05 23:43:01 by ahmaidi          ###   ########.fr       */
+/*   Updated: 2021/12/06 19:02:39 by ahmaidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 static int	put_print(va_list args, char chr)
 {
@@ -61,5 +60,6 @@ int	ft_printf(const char *format,	...)
 		}
 		i++;
 	}
+	va_end(args);
 	return (len);
 }
